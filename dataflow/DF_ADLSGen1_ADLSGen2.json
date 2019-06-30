@@ -1,5 +1,5 @@
 {
-	"name": "dataflow1",
+	"name": "DF_ADLSGen1_ADLSGen2",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
