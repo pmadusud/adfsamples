@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "migrationfactory"
+		},
+		"LS_ADLSGen2_accountKey": {
+			"value": ""
+		},
+		"LS_madhuadlsgen1_servicePrincipalKey": {
+			"value": ""
+		},
+		"LS_ADLSGen2_properties_typeProperties_url": {
+			"value": "https://sacadlsgen2.dfs.core.windows.net"
+		},
+		"LS_madhuadlsgen1_properties_typeProperties_dataLakeStoreUri": {
+			"value": "https://madhuadlsweu.azuredatalakestore.net/webhdfs/v1"
+		},
+		"LS_madhuadlsgen1_properties_typeProperties_servicePrincipalId": {
+			"value": "17125979-8f9e-427f-a2b7-f658c8dca12d"
+		},
+		"LS_madhuadlsgen1_properties_typeProperties_tenant": {
+			"value": "52bd225b-21f6-4110-b5e6-1752567d3f8e"
+		},
+		"LS_madhuadlsgen1_properties_typeProperties_subscriptionId": {
+			"value": "5a146b9c-0e6e-44db-9bd4-b804364f80b4"
+		},
+		"LS_madhuadlsgen1_properties_typeProperties_resourceGroupName": {
+			"value": "adls"
+		}
+	}
+}
