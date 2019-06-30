@@ -1,0 +1,37 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory Name",
+			"defaultValue": "migrationfactory"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "[concat(parameters('factoryName'), '/LS_madhuadlsgen1')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureDataLakeStore",
+				"typeProperties": {
+					"dataLakeStoreUri": "https://madhuadlsweu.azuredatalakestore.net/webhdfs/v1",
+					"servicePrincipalId": "17125979-8f9e-427f-a2b7-f658c8dca12d",
+					"servicePrincipalKey": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"tenant": "52bd225b-21f6-4110-b5e6-1752567d3f8e",
+					"subscriptionId": "5a146b9c-0e6e-44db-9bd4-b804364f80b4",
+					"resourceGroupName": "adls"
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}
