@@ -6,9 +6,11 @@
 		"type": "AzureDataLakeStore",
 		"typeProperties": {
 			"dataLakeStoreUri": "https://madhuadlsweu.azuredatalakestore.net/webhdfs/v1",
+			"servicePrincipalId": "17125979-8f9e-427f-a2b7-f658c8dca12d",
 			"tenant": "52bd225b-21f6-4110-b5e6-1752567d3f8e",
 			"subscriptionId": "5a146b9c-0e6e-44db-9bd4-b804364f80b4",
-			"resourceGroupName": "adls"
+			"resourceGroupName": "adls",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIk1JR1JBVElPTkZBQ1RPUllfNTQ4M2RkZDgtMDgzOC00MDE4LTlkYjUtMTZjNjcyMWU0NjkzIg0KfQ=="
 		}
 	}
 }
