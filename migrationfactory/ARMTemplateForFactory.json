@@ -57,7 +57,9 @@
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
-						"type": "AzureBlobFSLocation"
+						"type": "AzureBlobFSLocation",
+						"folderPath": "NYCTaxi",
+						"fileSystem": "Raw"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -82,12 +84,7 @@
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
-						"type": "AzureDataLakeStoreLocation",
-						"fileName": {
-							"value": "*.csv",
-							"type": "Expression"
-						},
-						"folderPath": "NYC Taxi/Trips"
+						"type": "AzureDataLakeStoreLocation"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -221,12 +218,13 @@
 							"name": "ADLSGen2NYCTaxi"
 						}
 					],
-					"script": "\n\nsource(output(\n\t\tmedallion as string,\n\t\thack_license as string,\n\t\tvendor_id as string,\n\t\trate_code as string,\n\t\tstore_and_fwd_flag as string,\n\t\tpickup_datetime as string,\n\t\tdropoff_datetime as string,\n\t\tpassenger_count as string,\n\t\ttrip_time_in_secs as string,\n\t\ttrip_distance as string,\n\t\tpickup_longitude as string,\n\t\tpickup_latitude as string,\n\t\tdropoff_longitude as string,\n\t\tdropoff_latitude as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tlimit: 100) ~> ADLSGen1NYCTaxi\nADLSGen1NYCTaxi sink(allowSchemaDrift: true,\n\tvalidateSchema: false) ~> ADLSGen2NYCTaxi"
+					"transformations": [],
+					"script": "\n\nsource(output(\n\t\tmedallion as string,\n\t\thack_license as string,\n\t\tvendor_id as string,\n\t\trate_code as string,\n\t\tstore_and_fwd_flag as string,\n\t\tpickup_datetime as string,\n\t\tdropoff_datetime as string,\n\t\tpassenger_count as string,\n\t\ttrip_time_in_secs as string,\n\t\ttrip_distance as string,\n\t\tpickup_longitude as string,\n\t\tpickup_latitude as string,\n\t\tdropoff_longitude as string,\n\t\tdropoff_latitude as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tlimit: 100,\n\twildcardPaths:['*.csv']) ~> ADLSGen1NYCTaxi\nADLSGen1NYCTaxi sink(allowSchemaDrift: true,\n\tvalidateSchema: false) ~> ADLSGen2NYCTaxi"
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/NYCSourceData')]",
-				"[concat(variables('factoryId'), '/datasets/DS_NYCTaxiSink')]"
+				"[concat(variables('factoryId'), '/datasets/DS_NYCTaxiSink')]",
+				"[concat(variables('factoryId'), '/datasets/NYCSourceData')]"
 			]
 		}
 	]
