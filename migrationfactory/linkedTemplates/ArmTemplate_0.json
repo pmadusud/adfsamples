@@ -125,7 +125,7 @@
 				"runtimeState": "Stopped",
 				"type": "TumblingWindowTrigger",
 				"typeProperties": {
-					"frequency": "Minute",
+					"frequency": "Hour",
 					"interval": 15,
 					"startTime": "2019-09-16T20:13:00.000Z",
 					"delay": "00:00:00",
