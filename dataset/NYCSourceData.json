@@ -9,12 +9,7 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureDataLakeStoreLocation",
-				"fileName": {
-					"value": "*.csv",
-					"type": "Expression"
-				},
-				"folderPath": "NYC Taxi/Trips"
+				"type": "AzureDataLakeStoreLocation"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
