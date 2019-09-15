@@ -5,16 +5,16 @@
 		"factoryName": {
 			"value": "migrationfactory"
 		},
-		"LS_ADLSGen2_accountKey": {
-			"value": ""
-		},
-		"LS_madhuadlsgen1_servicePrincipalKey": {
-			"value": ""
-		},
 		"AzureBlobStorage1_connectionString": {
 			"value": ""
 		},
 		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"LS_ADLSGen2_accountKey": {
+			"value": ""
+		},
+		"LS_madhuadlsgen1_servicePrincipalKey": {
 			"value": ""
 		},
 		"LS_ADLSGen2_properties_typeProperties_url": {
