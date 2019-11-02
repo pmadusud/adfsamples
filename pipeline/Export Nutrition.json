@@ -1,0 +1,209 @@
+{
+	"name": "Export Nutrition",
+	"properties": {
+		"activities": [
+			{
+				"name": "Export Nutrition Data",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "CosmosDbSqlApiSource",
+						"preferredRegions": []
+					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['id']"
+								},
+								"sink": {
+									"ordinal": 1
+								}
+							},
+							{
+								"source": {
+									"path": "$['_rid']"
+								},
+								"sink": {
+									"ordinal": 2
+								}
+							},
+							{
+								"source": {
+									"path": "$['_self']"
+								},
+								"sink": {
+									"ordinal": 3
+								}
+							},
+							{
+								"source": {
+									"path": "$['_etag']"
+								},
+								"sink": {
+									"ordinal": 4
+								}
+							},
+							{
+								"source": {
+									"path": "$['description']"
+								},
+								"sink": {
+									"ordinal": 5
+								}
+							},
+							{
+								"source": {
+									"path": "$['tags'][0]['name']"
+								},
+								"sink": {
+									"ordinal": 6
+								}
+							},
+							{
+								"source": {
+									"path": "$['version']"
+								},
+								"sink": {
+									"ordinal": 7
+								}
+							},
+							{
+								"source": {
+									"path": "$['foodGroup']"
+								},
+								"sink": {
+									"ordinal": 8
+								}
+							},
+							{
+								"source": {
+									"path": "$['nutrients'][0]['id']"
+								},
+								"sink": {
+									"ordinal": 9
+								}
+							},
+							{
+								"source": {
+									"path": "$['nutrients'][0]['description']"
+								},
+								"sink": {
+									"ordinal": 10
+								}
+							},
+							{
+								"source": {
+									"path": "$['nutrients'][0]['nutritionValue']"
+								},
+								"sink": {
+									"ordinal": 11
+								}
+							},
+							{
+								"source": {
+									"path": "$['nutrients'][0]['units']"
+								},
+								"sink": {
+									"ordinal": 12
+								}
+							},
+							{
+								"source": {
+									"path": "$['servings'][0]['amount']"
+								},
+								"sink": {
+									"ordinal": 13
+								}
+							},
+							{
+								"source": {
+									"path": "$['servings'][0]['description']"
+								},
+								"sink": {
+									"ordinal": 14
+								}
+							},
+							{
+								"source": {
+									"path": "$['servings'][0]['weightInGrams']"
+								},
+								"sink": {
+									"ordinal": 15
+								}
+							},
+							{
+								"source": {
+									"path": "$['_attachments']"
+								},
+								"sink": {
+									"ordinal": 16
+								}
+							},
+							{
+								"source": {
+									"path": "$['_ts']"
+								},
+								"sink": {
+									"ordinal": 17
+								}
+							},
+							{
+								"source": {
+									"path": "$['isFromSurvey']"
+								},
+								"sink": {
+									"ordinal": 18
+								}
+							},
+							{
+								"source": {
+									"path": "$['Column_1']"
+								},
+								"sink": {
+									"ordinal": 19
+								}
+							}
+						],
+						"collectionReference": ""
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "DS_NutritionDataCosmosDb",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "NutritionExtract",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}

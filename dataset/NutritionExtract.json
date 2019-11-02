@@ -1,0 +1,21 @@
+{
+	"name": "NutritionExtract",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_NutritionData_BS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "nutritiondata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
