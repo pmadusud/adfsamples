@@ -132,7 +132,7 @@
 							},
 							{
 								"source": {
-									"path": "$['servings'][0]['amount']"
+									"path": "['amount']"
 								},
 								"sink": {
 									"ordinal": 13
@@ -140,7 +140,7 @@
 							},
 							{
 								"source": {
-									"path": "$['servings'][0]['description']"
+									"path": "['description']"
 								},
 								"sink": {
 									"ordinal": 14
@@ -148,7 +148,7 @@
 							},
 							{
 								"source": {
-									"path": "$['servings'][0]['weightInGrams']"
+									"path": "['weightInGrams']"
 								},
 								"sink": {
 									"ordinal": 15
@@ -187,7 +187,7 @@
 								}
 							}
 						],
-						"collectionReference": ""
+						"collectionReference": "$['servings']"
 					}
 				},
 				"inputs": [
