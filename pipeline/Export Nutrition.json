@@ -39,6 +39,7 @@
 									"path": "$['id']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 1
 								}
 							},
@@ -47,6 +48,7 @@
 									"path": "$['_rid']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 2
 								}
 							},
@@ -55,6 +57,7 @@
 									"path": "$['_self']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 3
 								}
 							},
@@ -63,6 +66,7 @@
 									"path": "$['_etag']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 4
 								}
 							},
@@ -71,6 +75,7 @@
 									"path": "$['description']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 5
 								}
 							},
@@ -79,6 +84,7 @@
 									"path": "$['tags'][0]['name']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 6
 								}
 							},
@@ -87,6 +93,7 @@
 									"path": "$['version']"
 								},
 								"sink": {
+									"type": "Int32",
 									"ordinal": 7
 								}
 							},
@@ -95,6 +102,7 @@
 									"path": "$['foodGroup']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 8
 								}
 							},
@@ -103,6 +111,7 @@
 									"path": "$['nutrients'][0]['id']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 9
 								}
 							},
@@ -111,6 +120,7 @@
 									"path": "$['nutrients'][0]['description']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 10
 								}
 							},
@@ -119,6 +129,7 @@
 									"path": "$['nutrients'][0]['nutritionValue']"
 								},
 								"sink": {
+									"type": "Int32",
 									"ordinal": 11
 								}
 							},
@@ -127,6 +138,7 @@
 									"path": "$['nutrients'][0]['units']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 12
 								}
 							},
@@ -135,6 +147,7 @@
 									"path": "['amount']"
 								},
 								"sink": {
+									"type": "Int32",
 									"ordinal": 13
 								}
 							},
@@ -143,6 +156,7 @@
 									"path": "['description']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 14
 								}
 							},
@@ -151,6 +165,7 @@
 									"path": "['weightInGrams']"
 								},
 								"sink": {
+									"type": "Int32",
 									"ordinal": 15
 								}
 							},
@@ -159,6 +174,7 @@
 									"path": "$['_attachments']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 16
 								}
 							},
@@ -167,6 +183,7 @@
 									"path": "$['_ts']"
 								},
 								"sink": {
+									"type": "Int32",
 									"ordinal": 17
 								}
 							},
@@ -175,6 +192,7 @@
 									"path": "$['isFromSurvey']"
 								},
 								"sink": {
+									"type": "Boolean",
 									"ordinal": 18
 								}
 							},
@@ -183,6 +201,7 @@
 									"path": "$['Column_1']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 19
 								}
 							}
