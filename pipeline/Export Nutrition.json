@@ -129,7 +129,7 @@
 									"path": "$['nutrients'][0]['nutritionValue']"
 								},
 								"sink": {
-									"type": "Int32",
+									"type": "Decimal",
 									"ordinal": 11
 								}
 							},
