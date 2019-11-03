@@ -40,7 +40,8 @@
 									"path": "$['id']"
 								},
 								"sink": {
-									"name": "id"
+									"name": "id",
+									"type": "String"
 								}
 							},
 							{
@@ -48,7 +49,8 @@
 									"path": "$['_rid']"
 								},
 								"sink": {
-									"name": "_rid"
+									"name": "_rid",
+									"type": "String"
 								}
 							},
 							{
@@ -56,7 +58,8 @@
 									"path": "$['_self']"
 								},
 								"sink": {
-									"name": "_self"
+									"name": "_self",
+									"type": "String"
 								}
 							},
 							{
@@ -64,7 +67,8 @@
 									"path": "$['_etag']"
 								},
 								"sink": {
-									"name": "_etag"
+									"name": "_etag",
+									"type": "String"
 								}
 							},
 							{
@@ -72,7 +76,8 @@
 									"path": "$['description']"
 								},
 								"sink": {
-									"name": "description"
+									"name": "description",
+									"type": "String"
 								}
 							},
 							{
@@ -80,7 +85,8 @@
 									"path": "$['tags'][0]['name']"
 								},
 								"sink": {
-									"name": "name"
+									"name": "name",
+									"type": "String"
 								}
 							},
 							{
@@ -88,7 +94,8 @@
 									"path": "$['version']"
 								},
 								"sink": {
-									"name": "version"
+									"name": "version",
+									"type": "String"
 								}
 							},
 							{
@@ -96,7 +103,8 @@
 									"path": "$['foodGroup']"
 								},
 								"sink": {
-									"name": "foodgroup"
+									"name": "foodgroup",
+									"type": "String"
 								}
 							},
 							{
@@ -104,7 +112,8 @@
 									"path": "$['nutrients'][0]['id']"
 								},
 								"sink": {
-									"name": "nutrients-id"
+									"name": "nutrients-id",
+									"type": "String"
 								}
 							},
 							{
@@ -112,7 +121,8 @@
 									"path": "$['nutrients'][0]['description']"
 								},
 								"sink": {
-									"name": "nutrients-description"
+									"name": "nutrients-description",
+									"type": "String"
 								}
 							},
 							{
@@ -120,7 +130,8 @@
 									"path": "$['nutrients'][0]['nutritionValue']"
 								},
 								"sink": {
-									"name": "nutrients-nutritionvalue"
+									"name": "nutrients-nutritionvalue",
+									"type": "Double"
 								}
 							},
 							{
@@ -128,7 +139,8 @@
 									"path": "$['nutrients'][0]['units']"
 								},
 								"sink": {
-									"name": "nutrients-units"
+									"name": "nutrients-units",
+									"type": "String"
 								}
 							},
 							{
@@ -136,7 +148,8 @@
 									"path": "['amount']"
 								},
 								"sink": {
-									"name": "servings-amount"
+									"name": "servings-amount",
+									"type": "Double"
 								}
 							},
 							{
@@ -144,7 +157,8 @@
 									"path": "['description']"
 								},
 								"sink": {
-									"name": "servings-description"
+									"name": "servings-description",
+									"type": "String"
 								}
 							},
 							{
@@ -152,7 +166,8 @@
 									"path": "['weightInGrams']"
 								},
 								"sink": {
-									"name": "servings-weightingrams"
+									"name": "servings-weightingrams",
+									"type": "Double"
 								}
 							},
 							{
@@ -160,7 +175,8 @@
 									"path": "$['_attachments']"
 								},
 								"sink": {
-									"name": "_attachments"
+									"name": "_attachments",
+									"type": "String"
 								}
 							},
 							{
@@ -168,7 +184,8 @@
 									"path": "$['_ts']"
 								},
 								"sink": {
-									"name": "_ts"
+									"name": "_ts",
+									"type": "String"
 								}
 							},
 							{
@@ -176,6 +193,7 @@
 									"path": "$['isFromSurvey']"
 								},
 								"sink": {
+									"name": "isFromSurvery",
 									"type": "String"
 								}
 							}
