@@ -26,11 +26,189 @@
 							"type": "DelimitedTextReadSettings"
 						}
 					},
-					"enableStaging": false
+					"sink": {
+						"type": "CosmosDbSqlApiSink",
+						"writeBehavior": "upsert",
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "id",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['id']"
+								}
+							},
+							{
+								"source": {
+									"name": "_rid",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['_rid']"
+								}
+							},
+							{
+								"source": {
+									"name": "_self",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['_self']"
+								}
+							},
+							{
+								"source": {
+									"name": "_etag",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['_etag']"
+								}
+							},
+							{
+								"source": {
+									"name": "description",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['description']"
+								}
+							},
+							{
+								"source": {
+									"name": "name",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['tags'][0]['name']"
+								}
+							},
+							{
+								"source": {
+									"name": "version",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['version']"
+								}
+							},
+							{
+								"source": {
+									"name": "foodgroup",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['foodGroup']"
+								}
+							},
+							{
+								"source": {
+									"name": "nutrients-id",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['nutrients'][0]['id']"
+								}
+							},
+							{
+								"source": {
+									"name": "nutrients-description",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['nutrients'][0]['description']"
+								}
+							},
+							{
+								"source": {
+									"name": "nutrients-nutritionvalue",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['nutrients'][0]['nutritionValue']"
+								}
+							},
+							{
+								"source": {
+									"name": "nutrients-units",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['nutrients'][0]['units']"
+								}
+							},
+							{
+								"source": {
+									"name": "servings-amount",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['servings'][0]['amount']"
+								}
+							},
+							{
+								"source": {
+									"name": "servings-description",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['servings'][0]['description']"
+								}
+							},
+							{
+								"source": {
+									"name": "servings-weightingrams",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['servings'][0]['weightInGrams']"
+								}
+							},
+							{
+								"source": {
+									"name": "_attachments",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['_attachments']"
+								}
+							},
+							{
+								"source": {
+									"name": "_ts",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['_ts']"
+								}
+							},
+							{
+								"source": {
+									"name": "isFromSurvery",
+									"type": "String"
+								},
+								"sink": {
+									"path": "$['isFromSurvey']"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
 						"referenceName": "DS_NutritionData_CSV",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DS_NutritionDataCosmosDb",
 						"type": "DatasetReference"
 					}
 				]
