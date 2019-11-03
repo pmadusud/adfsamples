@@ -1,0 +1,11 @@
+{
+	"name": "DS_NutritionData_NoSchema_CosmosDBSQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_CosmosDBSQLAPI_NutritionDB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection"
+	}
+}
