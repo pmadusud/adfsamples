@@ -1,0 +1,21 @@
+{
+	"name": "DS_NutritionData_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_NutritionCSV_BS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "nutritiondata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
