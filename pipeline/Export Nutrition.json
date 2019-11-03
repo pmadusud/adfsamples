@@ -57,7 +57,7 @@
 									"path": "['weightInGrams']"
 								},
 								"sink": {
-									"type": "Decimal",
+									"type": "Double",
 									"ordinal": 3
 								}
 							},
@@ -156,7 +156,7 @@
 									"path": "$['nutrients'][0]['nutritionValue']"
 								},
 								"sink": {
-									"type": "Decimal",
+									"type": "Double",
 									"ordinal": 14
 								}
 							},
