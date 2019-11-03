@@ -22,7 +22,8 @@
 					"sink": {
 						"type": "DelimitedTextSink",
 						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings"
+							"type": "AzureBlobStorageWriteSettings",
+							"copyBehavior": "FlattenHierarchy"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
@@ -39,8 +40,7 @@
 									"path": "$['id']"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 1
+									"type": "String"
 								}
 							},
 							{
@@ -48,8 +48,7 @@
 									"path": "$['_rid']"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 2
+									"type": "String"
 								}
 							},
 							{
@@ -57,8 +56,7 @@
 									"path": "$['_self']"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 3
+									"type": "String"
 								}
 							},
 							{
@@ -66,8 +64,7 @@
 									"path": "$['_etag']"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 4
+									"type": "String"
 								}
 							},
 							{
@@ -75,8 +72,7 @@
 									"path": "$['description']"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 5
+									"type": "String"
 								}
 							},
 							{
@@ -84,8 +80,7 @@
 									"path": "$['tags'][0]['name']"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 6
+									"type": "String"
 								}
 							},
 							{
@@ -93,8 +88,7 @@
 									"path": "$['version']"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 7
+									"type": "String"
 								}
 							},
 							{
@@ -102,8 +96,7 @@
 									"path": "$['foodGroup']"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 8
+									"type": "String"
 								}
 							},
 							{
@@ -111,8 +104,7 @@
 									"path": "$['nutrients'][0]['id']"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 9
+									"type": "String"
 								}
 							},
 							{
@@ -120,8 +112,7 @@
 									"path": "$['nutrients'][0]['description']"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 10
+									"type": "String"
 								}
 							},
 							{
@@ -129,8 +120,7 @@
 									"path": "$['nutrients'][0]['nutritionValue']"
 								},
 								"sink": {
-									"type": "Double",
-									"ordinal": 11
+									"type": "Double"
 								}
 							},
 							{
@@ -138,8 +128,7 @@
 									"path": "$['nutrients'][0]['units']"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 12
+									"type": "String"
 								}
 							},
 							{
@@ -147,8 +136,7 @@
 									"path": "$['servings'][0]['amount']"
 								},
 								"sink": {
-									"type": "Double",
-									"ordinal": 13
+									"type": "Double"
 								}
 							},
 							{
@@ -156,8 +144,7 @@
 									"path": "$['servings'][0]['description']"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 14
+									"type": "String"
 								}
 							},
 							{
@@ -165,8 +152,7 @@
 									"path": "$['servings'][0]['weightInGrams']"
 								},
 								"sink": {
-									"type": "Double",
-									"ordinal": 15
+									"type": "Double"
 								}
 							},
 							{
@@ -174,8 +160,7 @@
 									"path": "$['_attachments']"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 16
+									"type": "String"
 								}
 							},
 							{
@@ -183,8 +168,7 @@
 									"path": "$['_ts']"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 17
+									"type": "String"
 								}
 							},
 							{
@@ -192,8 +176,7 @@
 									"path": "$['isFromSurvey']"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 18
+									"type": "String"
 								}
 							}
 						],
