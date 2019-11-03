@@ -129,7 +129,7 @@
 									"path": "$['nutrients'][0]['nutritionValue']"
 								},
 								"sink": {
-									"type": "String",
+									"type": "Double",
 									"ordinal": 11
 								}
 							},
@@ -147,7 +147,7 @@
 									"path": "$['servings'][0]['amount']"
 								},
 								"sink": {
-									"type": "String",
+									"type": "Double",
 									"ordinal": 13
 								}
 							},
@@ -165,7 +165,7 @@
 									"path": "$['servings'][0]['weightInGrams']"
 								},
 								"sink": {
-									"type": "String",
+									"type": "Double",
 									"ordinal": 15
 								}
 							},
