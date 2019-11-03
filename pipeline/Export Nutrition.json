@@ -36,119 +36,11 @@
 						"mappings": [
 							{
 								"source": {
-									"path": "$['id']"
-								},
-								"sink": {
-									"type": "String",
-									"ordinal": 1
-								}
-							},
-							{
-								"source": {
-									"path": "$['_rid']"
-								},
-								"sink": {
-									"type": "String",
-									"ordinal": 2
-								}
-							},
-							{
-								"source": {
-									"path": "$['_self']"
-								},
-								"sink": {
-									"type": "String",
-									"ordinal": 3
-								}
-							},
-							{
-								"source": {
-									"path": "$['_etag']"
-								},
-								"sink": {
-									"type": "String",
-									"ordinal": 4
-								}
-							},
-							{
-								"source": {
-									"path": "$['description']"
-								},
-								"sink": {
-									"type": "String",
-									"ordinal": 5
-								}
-							},
-							{
-								"source": {
-									"path": "$['tags'][0]['name']"
-								},
-								"sink": {
-									"type": "String",
-									"ordinal": 6
-								}
-							},
-							{
-								"source": {
-									"path": "$['version']"
-								},
-								"sink": {
-									"type": "Int32",
-									"ordinal": 7
-								}
-							},
-							{
-								"source": {
-									"path": "$['foodGroup']"
-								},
-								"sink": {
-									"type": "String",
-									"ordinal": 8
-								}
-							},
-							{
-								"source": {
-									"path": "$['nutrients'][0]['id']"
-								},
-								"sink": {
-									"type": "String",
-									"ordinal": 9
-								}
-							},
-							{
-								"source": {
-									"path": "$['nutrients'][0]['description']"
-								},
-								"sink": {
-									"type": "String",
-									"ordinal": 10
-								}
-							},
-							{
-								"source": {
-									"path": "$['nutrients'][0]['nutritionValue']"
-								},
-								"sink": {
-									"type": "Decimal",
-									"ordinal": 11
-								}
-							},
-							{
-								"source": {
-									"path": "$['nutrients'][0]['units']"
-								},
-								"sink": {
-									"type": "String",
-									"ordinal": 12
-								}
-							},
-							{
-								"source": {
 									"path": "['amount']"
 								},
 								"sink": {
 									"type": "Int32",
-									"ordinal": 13
+									"ordinal": 1
 								}
 							},
 							{
@@ -157,7 +49,7 @@
 								},
 								"sink": {
 									"type": "String",
-									"ordinal": 14
+									"ordinal": 2
 								}
 							},
 							{
@@ -165,7 +57,115 @@
 									"path": "['weightInGrams']"
 								},
 								"sink": {
+									"type": "Decimal",
+									"ordinal": 3
+								}
+							},
+							{
+								"source": {
+									"path": "$['id']"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 4
+								}
+							},
+							{
+								"source": {
+									"path": "$['_rid']"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 5
+								}
+							},
+							{
+								"source": {
+									"path": "$['_self']"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 6
+								}
+							},
+							{
+								"source": {
+									"path": "$['_etag']"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 7
+								}
+							},
+							{
+								"source": {
+									"path": "$['description']"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 8
+								}
+							},
+							{
+								"source": {
+									"path": "$['tags'][0]['name']"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 9
+								}
+							},
+							{
+								"source": {
+									"path": "$['version']"
+								},
+								"sink": {
 									"type": "Int32",
+									"ordinal": 10
+								}
+							},
+							{
+								"source": {
+									"path": "$['foodGroup']"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 11
+								}
+							},
+							{
+								"source": {
+									"path": "$['nutrients'][0]['id']"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 12
+								}
+							},
+							{
+								"source": {
+									"path": "$['nutrients'][0]['description']"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 13
+								}
+							},
+							{
+								"source": {
+									"path": "$['nutrients'][0]['nutritionValue']"
+								},
+								"sink": {
+									"type": "Decimal",
+									"ordinal": 14
+								}
+							},
+							{
+								"source": {
+									"path": "$['nutrients'][0]['units']"
+								},
+								"sink": {
+									"type": "String",
 									"ordinal": 15
 								}
 							},
