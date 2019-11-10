@@ -18,6 +18,10 @@
 					"dataflow": {
 						"referenceName": "df_nyctaxi",
 						"type": "DataFlowReference"
+					},
+					"integrationRuntime": {
+						"referenceName": "IR-AutoResolve-DataFlow",
+						"type": "IntegrationRuntimeReference"
 					}
 				}
 			}
