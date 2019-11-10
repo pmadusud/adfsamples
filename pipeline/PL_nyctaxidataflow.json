@@ -1,9 +1,9 @@
 {
-	"name": "PL_Radiodataflow",
+	"name": "PL_nyctaxidataflow",
 	"properties": {
 		"activities": [
 			{
-				"name": "df_radiodataflow",
+				"name": "df_nyctaxidata",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "dataflow1",
+						"referenceName": "df_nyctaxi",
 						"type": "DataFlowReference"
 					}
 				}
