@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureDataLakeStoreLocation",
-				"folderPath": "NYC Taxi"
+				"folderPath": "NYC Taxi/Trips"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
