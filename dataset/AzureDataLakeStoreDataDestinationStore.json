@@ -1,0 +1,23 @@
+{
+	"name": "AzureDataLakeStoreDataDestinationStore",
+	"properties": {
+		"description": "Connection to your data destination store.  ",
+		"linkedServiceName": {
+			"referenceName": "LS_madhuadlsgen1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"FolderPath": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "AzureDataLakeStoreFile",
+		"typeProperties": {
+			"folderPath": {
+				"value": "@dataset().FolderPath",
+				"type": "Expression"
+			}
+		}
+	}
+}
