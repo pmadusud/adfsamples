@@ -1,0 +1,11 @@
+{
+	"name": "LS_StorageSamples",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"serviceEndpoint": "https://madhustoragesamples.blob.core.windows.net",
+			"accountKind": "StorageV2"
+		}
+	}
+}
